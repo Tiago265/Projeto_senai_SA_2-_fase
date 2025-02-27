@@ -1,10 +1,10 @@
 # Projeto_senai_SA_2-_fase
 
 ## NomeProjeto
-Gerenciador de estoques online
+Autism Aid Game
 
 ## Descrição
-Aplicativo para gerenciar estoque de lojas físicas e virtuais de maneira prática e rápida
+Aplicativo voltado para pessoas com TEA (Transtorno do Espectro Autista), tendo como objetivo auxiliar crianças e adolescentes com TEA a trasmitirem suas vontades, necessidades, emoções e por ai vai.
 
 ## Coolaboradores
 [Elionai Santos] (https://github.com/Elionai685)
