@@ -1,0 +1,52 @@
+body{
+    background-color: purple;
+}
+.logo img{
+    border-radius: 50px;
+    width: 250px;
+    height: 250px;
+}
+.logo{
+    text-align: center;
+    margin-top: 50px;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: aqua;
+    font-size: 50px;
+}
+button{
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 0;
+    font-style: normal;
+    padding: 10px; 
+    margin-left: 42%;
+    margin-top: 10px;
+    border: black;
+    color: black;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    transition-duration: 1.3s;
+}
+.descricao{
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10px;
+    padding: 10px;
+    border-color: white;
+    border-radius: 10px;
+}
+.descricao h3{
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
