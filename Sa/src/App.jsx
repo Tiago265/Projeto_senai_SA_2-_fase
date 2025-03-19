@@ -1,13 +1,13 @@
-import './App.css'
-import Landing from './pages/Landing'
+import './App.css';
+import React from 'react';
+import Routes from './commom/service/routes';
 
 function App() {
   
   return (
     <>
-      <Landing />
+      <Routes/>
     </>
   )
 }
-
-export default App
+export default App;

@@ -1,4 +1,6 @@
 import "./Landing.css"
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Landing(){
 
@@ -20,6 +22,7 @@ function Landing(){
             <div className="botao">
                 <button>I'm button</button>
             </div>
+                <Link to="/">retornar a página inicial</Link>
        
        </div>
     </>
