@@ -1,12 +1,16 @@
 import './App.css';
 import React from 'react';
-import Routes from './commom/service/routes';
+import Cabecalho from './commom/components/cabecalho/Cabecalho';
+import Rodape from './commom/components/rodape/Rodape';
+import { Outlet, Route, Routes } from 'react-router-dom';
 
 function App() {
   
   return (
     <>
-      <Routes/>
+    <Cabecalho />
+    <Outlet />
+    <Rodape />
     </>
   )
 }

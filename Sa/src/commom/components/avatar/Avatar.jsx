@@ -1,4 +1,5 @@
-import '.Avatar.css'
+import "./Avatar.css"
+
 const Avatar = (props) => {
     const [primeiroNome, segundoNome] = props.nome.split(' ');
 

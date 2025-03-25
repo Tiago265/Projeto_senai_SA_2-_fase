@@ -3,14 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import Principal from '../../commom/components/principal/Principal';
 import CustomButton from '../../commom/components/button/CustomButton';
 
+
+
 const PaginaInicial = () => {
-    const navigate = useNavigate();
+   const navigate = useNavigate();
 
     return(
         <Principal titulo="Página Inicial">
             <CustomButton
              cor="primaria"
-             aoClicar={() => navigate('/landing')}>
+             aoClicar={() => navigate('/Landing')}>
                 Landing
              </CustomButton>
         </Principal>
