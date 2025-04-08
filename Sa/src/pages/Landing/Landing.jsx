@@ -6,20 +6,20 @@ function Landing(){
 
   return (
     <>
-        <div className="container">
+        <div id="container">
             
-            <div clasName='imagem'>
-                <img className="image" src="./images/blackhole.jpg" />
+            <div id="picture">
+                <img id='imagem' src="./images/blackhole.jpg" />
             </div>
 
-            <div className="titulo">
+            <div id="titulo">
                 <h1>Hello there.</h1>
             </div>
 
-            <div className="subtitulo">
+            <div id="subtitulo">
                 <h2>May the force be with you</h2>
             </div>
-            <div className="botao">
+            <div id="botao">
                 <button>I'm button</button>
             </div>
                 <Link to="/">retornar a página inicial</Link>
