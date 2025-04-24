@@ -1,0 +1,13 @@
+.container-cadastro-cliente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-cadastro-box{
+width: 400px;
+height: 400px;
+border-color: #0000;
+border: 10px solid var( --cor-primaria-escura);
+background-color: rgb(229, 216, 252);
+}

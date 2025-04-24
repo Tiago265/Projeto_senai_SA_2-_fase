@@ -2,7 +2,8 @@ import './App.css';
 import React from 'react';
 import Cabecalho from './commom/components/cabecalho/Cabecalho';
 import Rodape from './commom/components/rodape/Rodape';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
     <Cabecalho />
     <Outlet />
     <Rodape />
+
     </>
   )
 }
