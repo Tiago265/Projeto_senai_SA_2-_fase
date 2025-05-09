@@ -7,7 +7,7 @@
 .container-cadastro-box{
     /* width: 400px; */
     width: 50vw;
-    height: 400px;
+    height: 50vh;
     border-radius: 10px;
     border-color: #0000;
     border: 10px solid var( --cor-primaria-escura);
@@ -36,31 +36,32 @@
     margin: 10px;
     margin-right: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(191, 255, 96);
-    background-color: rgb(191, 255, 96);
+    border: 1px solid var(--cor-sucesso);
+    background-color: var(--cor-sucesso);
 }
 
 .btn-can{
     padding: 15px;
     height: 55px;
     margin-top: 2px;
-    border: 1px solid rgb(225, 81, 81);
+    border: 1px solid var(--cor-erro);
     border-radius: 5px;
-    background-color: rgb(225, 81, 81);
+    background-color: var(--cor-erro);
     font-size: 20px;
 }
 
 .btn-cad:hover{
-    color: #fefefe;
-    background-color: black;
-    border: 1px solid black;
+    box-shadow:0 0 20px var(--cor-sucesso);
     transition-duration: 1s;
     cursor: pointer;
 }
 .btn-can:hover{
-    color: black;
-    background-color: #fefefe;
-    border: 1px solid #fefefe;
+    box-shadow: 0 0 20px var(--cor-erro);
     transition-duration: 1s;
     cursor: pointer;
+}
+
+.label1{
+    display: flex;
+
 }
