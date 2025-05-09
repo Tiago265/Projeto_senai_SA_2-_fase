@@ -24,27 +24,11 @@ const [usuarios, setUsuarios] = useState([])
     return(
         <div className="container-cadastro-cliente">
         <div className="container-cadastro-box">
-<<<<<<< HEAD
             
             <div className="cnt-box-cad-um">
             <label htmlFor="Email">Digite seu e-mail: </label>    
             <input
             type="text"
-=======
-        <div className="label1">
-                <label htmlFor="Email">Digite seu e-mail: </label>
-        </div>
-            <input
-            type="text"
-            id="Password"
-            className="inputs-cadastro"
-            value={cadastro.password}
-            onChange={(event) => setCadastro({...cadastro, password: event.target.value})}
-            ></input>
-                <label htmlFor="Idade">Digite sua senha: </label>
-            <input
-            type="text"
->>>>>>> 7a272f60d9f42cd7a8b4934481325f67617a9bf2
             id="Email"
             className="inputs-cadastro"
             value={cadastro.email}
