@@ -24,12 +24,11 @@ const [usuarios, setUsuarios] = useState([])
     return(
         <div className="container-cadastro-cliente">
         <div className="container-cadastro-box">
-        <Avatar nome="Nome Sobrenome" />
-
+        <div className="label1">
                 <label htmlFor="Email">Digite seu e-mail: </label>
+        </div>
             <input
             type="text"
-            placeholder="Digite sua senha aqui"
             id="Password"
             className="inputs-cadastro"
             value={cadastro.password}
@@ -38,7 +37,6 @@ const [usuarios, setUsuarios] = useState([])
                 <label htmlFor="Idade">Digite sua senha: </label>
             <input
             type="text"
-            placeholder="Digite seu e-mail aqui"
             id="Email"
             className="inputs-cadastro"
             value={cadastro.email}
