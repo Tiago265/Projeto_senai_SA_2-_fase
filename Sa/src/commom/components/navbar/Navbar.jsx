@@ -7,19 +7,13 @@ const Navbar = () => {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li className="navbar-item">
-                    <Link to="/paginainicial" className="navbar-link">Início</Link>
+                    <Link to="/paginainicial" className="navbar-link">HomePage</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/landing" className="navbar-link">Jogos Educacionais</Link>
+                    <Link to="/landing" className="navbar-link">Landing</Link>
                 </li>
                 <li className="navbar-item">
                     <Link to="/cadastro" className="navbar-link">Cadastrar</Link>
-                </li>
-                <li className="navbar-item">
-                    <Link to="/atividades" className="navbar-link">Atividades</Link>
-                </li>
-                <li className="navbar-item">
-                    <Link to="/configuracoes" className="navbar-link">Configurações</Link>
                 </li>
             </ul>
         </nav>
