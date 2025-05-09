@@ -18,18 +18,49 @@
     align-items: center;
 }
 
-.container-cadastro-box button{
-    width: 10vw;
-    padding: 10px;
-    font-size: 20px;
-    margin: 10px;
-}
 
 .container-cadastro-box input{
     width: 15vw;
     padding: 15px;
     font-size: 20px;
-    border: 1px solid black; 
+    border: 1px solid #fefefe; 
     border-radius: 10px;
     margin: 10px;
+}
+
+
+.btn-cad{
+    width: 20vw;
+    padding: 14px;
+    font-size: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(191, 255, 96);
+    background-color: rgb(191, 255, 96);
+}
+
+.btn-can{
+    padding: 15px;
+    height: 55px;
+    margin-top: 2px;
+    border: 1px solid rgb(225, 81, 81);
+    border-radius: 5px;
+    background-color: rgb(225, 81, 81);
+    font-size: 20px;
+}
+
+.btn-cad:hover{
+    color: #fefefe;
+    background-color: black;
+    border: 1px solid black;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.btn-can:hover{
+    color: black;
+    background-color: #fefefe;
+    border: 1px solid #fefefe;
+    transition-duration: 1s;
+    cursor: pointer;
 }
