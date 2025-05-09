@@ -23,34 +23,7 @@ const [usuarios, setUsuarios] = useState([])
     return(
         <div className="container-cadastro-cliente">
         <div className="container-cadastro-box">
-            <label htmlFor="Nome">Digite seu nome: </label>
-            <input
-            type="text"
-            placeholder="Digite seu nome aqui"
-            id="Nome"
-            className="inputs-cadastro"
-            value={cadastro.nome}
-            onChange={(event) => setCadastro({...cadastro, nome: event.target.value})}
-            ></input><br/>
-                        <label htmlFor="Nome">Digite seu nome: </label>
-            <input
-            type="text"
-            placeholder="Digite sua idade aqui"
-            id="Idade"
-            className="inputs-cadastro"
-            value={cadastro.idade}
-            onChange={(event) => setCadastro({...cadastro, idade: event.target.value})}
-            ></input><br/>
-                        <label htmlFor="Idade">Digite sua idade: </label>
-            <input
-            type="text"
-            placeholder="Digite seu e-mail aqui"
-            id="Email"
-            className="inputs-cadastro"
-            value={cadastro.email}
-            onChange={(event) => setCadastro({...cadastro, email: event.target.value})}
-            ></input><br/>
-                        <label htmlFor="Email">Digite seu e-mail: </label>
+                <label htmlFor="Email">Digite seu e-mail: </label>
             <input
             type="text"
             placeholder="Digite sua senha aqui"
@@ -58,7 +31,17 @@ const [usuarios, setUsuarios] = useState([])
             className="inputs-cadastro"
             value={cadastro.password}
             onChange={(event) => setCadastro({...cadastro, password: event.target.value})}
-            ></input><br/>
+            ></input>
+                <label htmlFor="Idade">Digite sua senha: </label>
+            <input
+            type="text"
+            placeholder="Digite seu e-mail aqui"
+            id="Email"
+            className="inputs-cadastro"
+            value={cadastro.email}
+            onChange={(event) => setCadastro({...cadastro, email: event.target.value})}
+            ></input>
+            <br/>
             <button onClick={Cadastrar}>Cadastrar</button>
                 {console.log(usuarios)}
             </div>
