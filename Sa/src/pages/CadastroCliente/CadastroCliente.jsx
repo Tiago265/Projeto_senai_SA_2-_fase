@@ -51,7 +51,6 @@ const [usuarios, setUsuarios] = useState([])
 
             <button onClick={Cadastrar} className="btn-cad">Cadastrar</button>
                 {console.log(usuarios)}
-            <button className="btn-can">Cancelar</button>
 
             </div>
             </div>
