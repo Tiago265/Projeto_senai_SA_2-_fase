@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Link to="/landing" className="navbar-link">Jogos Educacionais</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/cadastro" className="navbar-link">Comunicação</Link>
+                    <Link to="/cadastro" className="navbar-link">Cadastrar</Link>
                 </li>
                 <li className="navbar-item">
                     <Link to="/atividades" className="navbar-link">Atividades</Link>

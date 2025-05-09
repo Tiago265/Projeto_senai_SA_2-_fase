@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CadastroCliente.css";
+import Avatar from "../../commom/components/avatar/Avatar";
 
 function CadastroCliente(){
 const [usuarios, setUsuarios] = useState([])
@@ -23,6 +24,8 @@ const [usuarios, setUsuarios] = useState([])
     return(
         <div className="container-cadastro-cliente">
         <div className="container-cadastro-box">
+        <Avatar nome="Nome Sobrenome" />
+
                 <label htmlFor="Email">Digite seu e-mail: </label>
             <input
             type="text"
@@ -42,8 +45,11 @@ const [usuarios, setUsuarios] = useState([])
             onChange={(event) => setCadastro({...cadastro, email: event.target.value})}
             ></input>
             <br/>
-            <button onClick={Cadastrar}>Cadastrar</button>
+            <div className="buttons">
+            <button onClick={Cadastrar} className="btn-cad">Cadastrar</button>
                 {console.log(usuarios)}
+            <button className="btn-can">Cancelar</button>
+            </div>
             </div>
         </div>
     )
