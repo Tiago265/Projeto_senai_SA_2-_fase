@@ -50,9 +50,9 @@ const UsersCadastradosAtualizados = [...usuarios, formulario];
 
             <div className="cnt-box-cad-dois">
             
-            <label htmlFor="Idade">Digite sua senha: </label>
+            <label htmlFor="Password">Digite sua senha: </label>
             <input
-            type="passa"
+            type="password"
             id="Password"
             className="inputs-cadastro"
             value={cadastro.password}
