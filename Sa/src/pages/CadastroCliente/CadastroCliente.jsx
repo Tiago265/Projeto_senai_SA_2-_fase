@@ -1,31 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./CadastroCliente.css";
-import BotaoCustomizado from "../../commom/components/BotaoCustomizado/BotaoCustomizado";
+
 
 function CadastroCliente(){
-const [usuarios, setUsuarios] = useState([])
-    const [cadastro, setCadastro] = useState({
-        nome: "",
-        idade: 0,
-        email: "",
-        password: ""
-    })
+    const [usuarios, setUsuarios] = useState([])
 
-    function Cadastrar(){
-        let formulario = {
-            id: Date.now(),
-            nome: cadastro.nome,
-            idade: cadastro.idade,
-            email: cadastro.email,
-            password: cadastro.password
-        }
-            setUsuarios([...usuarios,formulario])
-    }
+
+useEffect(() => {
+    const UsersCadastrados = JSON.parse(localStorage.getItem("usuarios")) || [];
+    setUsuarios(UsersCadastrados);
+    }, []);
+    
+const [cadastro, setCadastro] = useState({
+    id: "",
+    email: "",
+    password: ""
+});
+
+function Cadastrar(){
+    const formulario = {
+    id: Date.now(),
+    email: cadastro.email,
+    password: cadastro.password
+};
+            // setUsuarios([...usuarios,formulario])
+            
+const UsersCadastradosAtualizados = [...usuarios, formulario];
+    setUsuarios(UsersCadastradosAtualizados);
+    localStorage.setItem("usuarios", JSON.stringify(UsersCadastradosAtualizados));
+
+    alert("Usuário cadastrado com sucesso!");
+}
+
     return(
         <div className="container-cadastro-cliente">
-        <div className="container-cadastro-box">
-            
+          <div className="container-cadastro-box"> 
             <div className="cnt-box-cad-um">
+            
             <label htmlFor="Email">Digite seu e-mail: </label>    
             <input
             type="text"
@@ -33,10 +44,12 @@ const [usuarios, setUsuarios] = useState([])
             className="inputs-cadastro"
             value={cadastro.email}
             onChange={(event) => setCadastro({...cadastro, email: event.target.value})}
-            ></input>
+            />
+            
             </div>
 
             <div className="cnt-box-cad-dois">
+            
             <label htmlFor="Idade">Digite sua senha: </label>
             <input
             type="passa"
@@ -44,17 +57,17 @@ const [usuarios, setUsuarios] = useState([])
             className="inputs-cadastro"
             value={cadastro.password}
             onChange={(event) => setCadastro({...cadastro, password: event.target.value})}
-            ></input>
+            />
+            
             </div>
+            
             <div className="buttons">
            
-
             <button onClick={Cadastrar} className="btn-cad">Cadastrar</button>
-                {console.log(usuarios)}
-            <button className="btn-can">Cancelar</button>
+            {console.log(usuarios)}
 
             </div>
-            </div>
+          </div>
         </div>
     )
     
