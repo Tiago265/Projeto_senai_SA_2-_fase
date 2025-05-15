@@ -4,6 +4,11 @@
     align-items: center;
     flex-direction: column;
 }
+input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container-cadastro-box{
     /* width: 400px; */
     width: 50vw;

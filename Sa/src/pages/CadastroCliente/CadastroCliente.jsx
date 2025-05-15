@@ -4,6 +4,8 @@ import "./CadastroCliente.css";
 
 function CadastroCliente(){
     const [usuarios, setUsuarios] = useState([])
+    const [inputUsuario, setInputUsuario] = useState('')
+    const [confirmarSenha, setConfirmarSenha] = useState('')
 
 
 useEffect(() => {
@@ -36,7 +38,13 @@ const UsersCadastradosAtualizados = [...usuarios, formulario];
         <div className="container-cadastro-cliente">
           <div className="container-cadastro-box"> 
             <div className="cnt-box-cad-um">
-            
+            <label htmlFor="Usuario">Digite seu nome de Usuário: </label>
+            <input 
+            type="text" 
+            id="usuario"
+            className="inputs-cadastro"
+            value={inputUsuario}
+            onChange={(event) => setInputUsuario(event.target.value)}/>
             <label htmlFor="Email">Digite seu e-mail: </label>    
             <input
             type="text"
@@ -58,6 +66,11 @@ const UsersCadastradosAtualizados = [...usuarios, formulario];
             value={cadastro.password}
             onChange={(event) => setCadastro({...cadastro, password: event.target.value})}
             />
+            <label htmlFor="Confirmacao">Digite novamente sua senha: </label>
+            <input type="password"
+            id="confirmarSenha"
+            value={confirmarSenha}
+            onChange={(event) => setConfirmarSenha(event.target.value)} />
             
             </div>
             

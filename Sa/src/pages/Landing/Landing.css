@@ -1,15 +1,29 @@
-#container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-    border: 1px solid ;
-}
-.container-login{
+.conteiner{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+}
+.vermelho{
+    color: var(--cor-erro);
+}
+.amarelo{
+    color: yellow;
+}
+.roxo{
+    color: var(--cor-primaria);
+}
+span{
+    font-size: 50px;
+}
+.palavras{
+    text-align: center;
+}
+.frase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
