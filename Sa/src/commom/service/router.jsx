@@ -4,21 +4,24 @@ import Landing from "../../pages/Landing/Landing";
 import PaginaInicial from "../../pages/PaginaInicial/PaginaInicial";
 import CadastroCliente from "../../pages/CadastroCliente/CadastroCliente";
 import LoginCliente from "../../pages/LoginCliente/LoginCliente";
-
-// Configuração das rotas
+import VerificarAutenticacao from "../components/VerificarAutentificacao/VerificarAutentificacao";
 
 const router = createBrowserRouter([
-    {
-        path: "/", // Rota raiz
-        element: <App />, // Componente principal
-        children: [
-            { path: "paginainicial", element: <PaginaInicial/> }, // Subrota "home"
-            { path: "landing", element: <Landing /> },
-            { path: "cadastro", element: <CadastroCliente /> },
-            { path: "login", element: <LoginCliente /> },
-            { path: "*", element: <div>404 - Página não encontrada</div> }, // Rota para erro 404
-        ],
-    },
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "landing", element: <Landing /> },
+      {
+        path: "",
+        element: <VerificarAutenticacao />,
+        children: [{ path: "paginainicial", element: <PaginaInicial /> }],
+      },
+      { path: "cadastro", element: <CadastroCliente /> },
+      { path: "login", element: <LoginCliente /> },
+      { path: "*", element: <div>404 - Página não encontrada</div> },
+    ],
+  },
 ]);
 
 export default router;

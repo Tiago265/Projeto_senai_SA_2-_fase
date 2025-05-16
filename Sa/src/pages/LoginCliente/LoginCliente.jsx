@@ -1,60 +1,58 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import ServicoAutentificacao from "../../commom/service/servicoAutentificacao";
 import "./LoginCliente.css";
 
+const instanciaServicoAutentificacao = new ServicoAutentificacao();
+
 function LoginCliente() {
-    const [login, setLogin] = useState({
-    email: "",
-    password: ""
-  });
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
-function realizarLogin() {
-    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    const usuarioEncontrado = usuarios.find(
-        (user) => user.email === login.email && user.password === login.password
-    );
+  const entrar = () => {
+    if (!email || !senha) {
+      toast.error("Preencha todos os campos!");
+      return;
+    }
 
-    if (usuarioEncontrado) {
-        alert("Login realizado com sucesso!");
+    const usuarioLogado = instanciaServicoAutentificacao.login(email, senha);
+    if (usuarioLogado) {
+      toast.success("Login realizado com sucesso!");
+      navigate("/paginainicial");
     } else {
-        alert("Email ou senha incorretos!");
-  }
-}
+      toast.error("Usuário ou senha inválidos!");
+    }
+  };
 
   return (
     <div className="container-login-cliente">
       <div className="container-login-box">
         <div className="cnt-box-login">
-          <label htmlFor="Email">Digite seu e-mail:</label>
+          <label htmlFor="email">Digite seu e-mail:</label>
           <input
             type="text"
-            id="Email"
+            id="email"
             className="inputs-login"
-            value={login.email}
-            onChange={(event) =>
-              setLogin({ ...login, email: event.target.value })
-            }
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-
         <div className="cnt-box-login">
-          <label htmlFor="Password">Digite sua senha:</label>
+          <label htmlFor="senha">Digite sua senha:</label>
           <input
             type="password"
-            id="Password"
+            id="senha"
             className="inputs-login"
-            value={login.password}
-            onChange={(event) =>
-              setLogin({ ...login, password: event.target.value })
-            }
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
         </div>
-
         <div className="buttons">
-
-        <button onClick={realizarLogin} className="btn-log">
-            Login
-        </button>
-
+          <button onClick={entrar} className="btn-log">
+            Entrar
+          </button>
         </div>
       </div>
     </div>

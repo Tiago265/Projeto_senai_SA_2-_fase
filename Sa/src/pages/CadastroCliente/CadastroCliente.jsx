@@ -1,75 +1,71 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import ServicoUsuarios from "../../commom/service/servicoUsuarios";
 import "./CadastroCliente.css";
 
+const instanciaServicoUsuarios = new ServicoUsuarios();
 
-function CadastroCliente(){
-    const [usuarios, setUsuarios] = useState([])
+function CadastroCliente() {
+  const navigate = useNavigate();
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
+  const cadastrar = () => {
+    if (!nome || !email || !senha) {
+      toast.error("Preencha todos os campos!");
+      return;
+    }
 
-useEffect(() => {
-    const UsersCadastrados = JSON.parse(localStorage.getItem("usuarios")) || [];
-    setUsuarios(UsersCadastrados);
-    }, []);
-    
-const [cadastro, setCadastro] = useState({
-    id: "",
-    email: "",
-    password: ""
-});
+    const novoUsuario = { nome, email, senha };
+    const sucesso = instanciaServicoUsuarios.cadastrar(novoUsuario);
 
-function Cadastrar(){
-    const formulario = {
-    id: Date.now(),
-    email: cadastro.email,
-    password: cadastro.password
-};
-            // setUsuarios([...usuarios,formulario])
-            
-const UsersCadastradosAtualizados = [...usuarios, formulario];
-    setUsuarios(UsersCadastradosAtualizados);
-    localStorage.setItem("usuarios", JSON.stringify(UsersCadastradosAtualizados));
+    if (sucesso) {
+      toast.success("Cadastro realizado com sucesso! Faça login.", {
+        onClose: () => navigate("/login"),
+        autoClose: 1500,
+      });
+    } else {
+      toast.error("Um usuário com este e-mail já foi cadastrado!");
+    }
+  };
 
-    alert("Usuário cadastrado com sucesso!");
-}
-
-    return(
-        <div className="container-cadastro-cliente">
-          <div className="container-cadastro-box"> 
-            <div className="cnt-box-cad-um">
-            
-            <label htmlFor="Email">Digite seu e-mail: </label>    
-            <input
+  return (
+    <div className="container-cadastro-cliente">
+      <div className="container-cadastro-box">
+        <h2>Cadastro</h2>
+        <div className="input-group">
+          <label htmlFor="nome">Nome:</label>
+          <input
             type="text"
-            id="Email"
-            className="inputs-cadastro"
-            value={cadastro.email}
-            onChange={(event) => setCadastro({...cadastro, email: event.target.value})}
-            />
-            
-            </div>
-
-            <div className="cnt-box-cad-dois">
-            
-            <label htmlFor="Password">Digite sua senha: </label>
-            <input
-            type="password"
-            id="Password"
-            className="inputs-cadastro"
-            value={cadastro.password}
-            onChange={(event) => setCadastro({...cadastro, password: event.target.value})}
-            />
-            
-            </div>
-            
-            <div className="buttons">
-           
-            <button onClick={Cadastrar} className="btn-cad">Cadastrar</button>
-            {console.log(usuarios)}
-
-            </div>
-          </div>
+            id="nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+          />
         </div>
-    )
-    
+        <div className="input-group">
+          <label htmlFor="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="input-group">
+          <label htmlFor="senha">Senha:</label>
+          <input
+            type="password"
+            id="senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
+        </div>
+        <button onClick={cadastrar}>Cadastrar</button>
+      </div>
+    </div>
+  );
 }
+
 export default CadastroCliente;
