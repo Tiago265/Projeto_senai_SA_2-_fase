@@ -1,12 +1,19 @@
 .container-login-cliente{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
+
 .container-login-box{
-    /* width: 400px; */
-    width: 50vw;
+    border: 1px solid aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+        width: 50vw;
     height: 50vh;
     border-radius: 10px;
     border-color: #0000;
@@ -18,7 +25,6 @@
     align-items: center;
 }
 
-
 .container-login-box input{
     width: 15vw;
     padding: 15px;
@@ -27,7 +33,6 @@
     border-radius: 10px;
     margin: 10px;
 }
-
 
 .btn-log{
     width: 30vw;
@@ -40,15 +45,8 @@
     background-color: var(--cor-sucesso);
 }
 
-
-
 .btn-log:hover{
     box-shadow:0 0 20px var(--cor-sucesso);
-    transition-duration: 1s;
-    cursor: pointer;
-}
-.btn-log:hover{
-    box-shadow: 0 0 20px var(--cor-erro);
     transition-duration: 1s;
     cursor: pointer;
 }
