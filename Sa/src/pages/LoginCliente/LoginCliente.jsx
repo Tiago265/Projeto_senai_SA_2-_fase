@@ -29,6 +29,7 @@ function LoginCliente() {
   return (
     <div className="container-login-cliente">
       <div className="container-login-box">
+                <h2>Login</h2>
         <div className="cnt-box-login">
           <label htmlFor="email">Digite seu e-mail:</label>
           <input
