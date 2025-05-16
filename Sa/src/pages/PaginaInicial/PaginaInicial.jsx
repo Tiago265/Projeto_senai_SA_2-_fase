@@ -1,7 +1,7 @@
 import './PaginaInicial.css';
 import { useNavigate } from 'react-router-dom';
-import Principal from '../../commom/components/principal/Principal';
-import CustomButton from '../../commom/components/button/CustomButton';
+import Principal from '../../common/components/principal/Principal';
+import CustomButton from '../../common/components/button/CustomButton';
 
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import ServicoUsuarios from "../../commom/service/servicoUsuarios";
+import ServicoUsuarios from "../../common/service/servicoUsuarios";
 import "./CadastroCliente.css";
 
 const instanciaServicoUsuarios = new ServicoUsuarios();

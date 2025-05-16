@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import ServicoAutentificacao from "../../commom/service/servicoAutentificacao";
+import ServicoAutentificacao from "../../common/service/servicoAutentificacao";
 import "./LoginCliente.css";
 
 const instanciaServicoAutentificacao = new ServicoAutentificacao();
