@@ -38,6 +38,7 @@ function LoginCliente() {
             className="inputs-login"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="E-mail"
           />
         </div>
         <div className="cnt-box-login">
@@ -48,6 +49,7 @@ function LoginCliente() {
             className="inputs-login"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
+            placeholder="Senha"
           />
         </div>
         <div className="buttons">

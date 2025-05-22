@@ -42,6 +42,7 @@ function CadastroCliente() {
             id="nome"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
+            placeholder="Nome"
           />
         </div>
         <div className="input-group">
@@ -51,6 +52,7 @@ function CadastroCliente() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+             placeholder="E-mail"
           />
         </div>
         <div className="input-group">
@@ -60,9 +62,10 @@ function CadastroCliente() {
             id="senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
+             placeholder="Senha"
           />
         </div>
-        <button onClick={cadastrar}>Cadastrar</button>
+        <button className="btn-cad" onClick={cadastrar}>Cadastrar</button>
       </div>
     </div>
   );

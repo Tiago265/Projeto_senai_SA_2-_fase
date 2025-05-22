@@ -55,7 +55,7 @@ const Navbar = () => {
                 {online && (
                     <li className="navbar-item">
 
-                        <button onClick={botaoLogout} className="navbar-link logout-button">Logout</button>
+                        <button onClick={botaoLogout} className="btn-logout">Logout</button>
                     </li>
                 )}
             </ul>

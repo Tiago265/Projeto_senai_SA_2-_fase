@@ -23,7 +23,9 @@ function Landing(){
             </p>
             </div>
           <div className="botao-landing">
-            <button><span className="vermelho">Crie </span><span className="amarelo">sua ro</span> <span className="roxo">tina ag</span> <span className="vermelho">ora</span></button>
+
+            <button className="btn-rotina"><span className="vermelho">Crie </span><span className="amarelo">sua ro</span> <span className="roxo">tina ag</span> <span className="vermelho">ora</span></button>
+            
           </div>
 
 
