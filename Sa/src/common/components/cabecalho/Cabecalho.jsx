@@ -1,9 +1,9 @@
 import "./Cabecalho.css";
-import Navbar from "../navbar/navbar";
-import Avatar from "../avatar/Avatar";
+import Navbar from "../navbar/Navbar";
 
-function Cabecalho() {
-    
+
+function Cabecalho () {
+
     return (
         <header className="cabecalho_root">
             {/* <img src="icon-profile-3.jpg" height={40} /> */}

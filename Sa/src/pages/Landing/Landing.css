@@ -1,9 +1,13 @@
-.conteiner{
+.container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
+}
+.title-landing{
+    margin-top: 6svh;
+    margin-bottom: 6vh;
 }
 .vermelho{
     color: var(--cor-erro);
@@ -16,14 +20,29 @@
 }
 span{
     font-size: 50px;
+
 }
-.palavras{
+.descricao-landing{
     text-align: center;
+    margin-top: 19vh;
+    font-style: Thin 100;
+    
 }
-.frase{
+.botao-landing{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 18vh;
 }
+
+    .roboto-descricao-landing{
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+          "weight" 100;
+      }
+      

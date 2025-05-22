@@ -11,15 +11,17 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+
       { path: "landing", element: <Landing /> },
       {
         path: "",
         element: <VerificarAutenticacao />,
-        children: [{ path: "paginainicial", element: <PaginaInicial /> }],
+        children: [{ path: "paginainicial", element: <PaginaInicial /> }]
       },
       { path: "cadastro", element: <CadastroCliente /> },
       { path: "login", element: <LoginCliente /> },
       { path: "*", element: <div>404 - Página não encontrada</div> },
+    
     ],
   },
 ]);

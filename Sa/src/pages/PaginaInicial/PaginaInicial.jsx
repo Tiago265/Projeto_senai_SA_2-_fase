@@ -1,12 +1,7 @@
 import './PaginaInicial.css';
-import { useNavigate } from 'react-router-dom';
-import Principal from '../../common/components/principal/Principal';
-import CustomButton from '../../common/components/button/CustomButton';
-
-
 
 const PaginaInicial = () => {
-   const navigate = useNavigate();
+
 
     return(
         
