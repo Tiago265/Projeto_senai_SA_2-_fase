@@ -23,7 +23,7 @@ const Navbar = () => {
 
     const botaoLogout = () => {
         instanciaServicoAutentificacao.logout(); 
-        setOnline(false); 
+        setOnline(false);
 
     };
 

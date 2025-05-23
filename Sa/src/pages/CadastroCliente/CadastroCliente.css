@@ -10,26 +10,7 @@ input{
     justify-content: center;
   
 }
-    #nome{
-        border: none;
-        outline: none;
-        border-bottom: 5px solid var(--cor-primaria-escura);
-        background-color: var(--cor);
-        /* background-color: rgb(229, 216, 252); */
-    }
-    #email{
-        border: none;
-        outline: none;
-        border-bottom: 5px solid var(--cor-primaria-escura);
-        background-color: var(--cor);
-        
-    }
-    #senha{
-        border: none;
-        outline: none;
-        border-bottom: 5px solid var(--cor-primaria-escura);
-        background-color: var(--cor);
-    }
+
 .container-cadastro-box{
     /* width: 400px; */
     width: 50vw;
@@ -73,6 +54,13 @@ input{
     transition-duration: 1s;
     cursor: pointer;
 }
+
+#nome{
+    border: none;
+    outline: none;
+    border-bottom: 5px solid var(--cor-primaria-escura);
+    background-color: var(--cor);
+}   
 
 
 /* .btn-can:hover{
