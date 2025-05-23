@@ -45,6 +45,26 @@
 .navbar-link:hover {
     color: var(--cor-primaria-clara);
 }
+    .navbar-login{
+        text-decoration: none;
+        background-color: var(--cor-primaria-escura);
+        border: none;
+        outline: none;
+        color:aliceblue;
+        font-size: 16px;
+        transition: color 1.0s ease;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .navbar-login:hover{
+        background-color: var(--cor);
+        border: none;
+        outline: none;
+        color: var(--cor-primaria-escura);
+        font-size: 16px;
+        transition: color 1.0s ease;
+        cursor: pointer;
+    }
     .btn-logout{
         background-color: var(--cor-primaria-escura);
         border: none;

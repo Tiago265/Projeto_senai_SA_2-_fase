@@ -24,16 +24,14 @@ input{
     justify-content: center;
     align-items: center;
 }
-
-
-.container-cadastro-box input{
-    width: 15vw;
-    padding: 15px;
-    font-size: 20px;
-    border: 1px solid #fefefe; 
-    border-radius: 10px;
-    margin: 10px;
-}
+   .container-cadastro-box input{
+        width: 15vw;
+        padding: 15px;
+        font-size: 20px;
+        border: 1px solid #fefefe; 
+        border-radius: 10px;
+        margin: 10px;
+    }
 
 
 .btn-cad{
@@ -45,22 +43,22 @@ input{
     border-radius: 5px;
     border: 1px solid var(--cor-sucesso);
     background-color: var(--cor-sucesso);
+
+    /* background-color: var(--cor-primaria-escura);
+    color: white; */
 }
-
-
-
-.btn-cad:hover{
+    .btn-cad:hover{
     box-shadow:0 0 20px var(--cor-sucesso);
     transition-duration: 1s;
     cursor: pointer;
-}
+    }
 
 #nome{
     border: none;
     outline: none;
     border-bottom: 5px solid var(--cor-primaria-escura);
     background-color: var(--cor);
-}   
+}  
 
 
 /* .btn-can:hover{
