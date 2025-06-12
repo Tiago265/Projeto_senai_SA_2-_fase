@@ -1,6 +1,7 @@
 import "./Landing.css"
 import React from "react";
 import { Link } from "react-router-dom";
+// import minhaImagem from './public/images/Frame_4-removebg-preview.png'
 
 function Landing(){
 
@@ -10,7 +11,8 @@ function Landing(){
           <img src="" alt="" />
           
           <div className="title-landing">
-          <span className="vermelho">Autism </span> <span className="amarelo"> Aid </span> <span className="roxo">Game</span>
+          <span className="vermelho">Easy </span> <span className="amarelo"> Routines </span>
+          {/* <img src="Frame_4-removebg-preview.png" alt="" /> */}
           </div>
 
           <div className="descricao-landing">
