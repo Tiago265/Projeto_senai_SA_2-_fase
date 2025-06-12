@@ -16,10 +16,7 @@ function Landing(){
           <div className="descricao-landing">
 
 
-            <p>Um site de auxílio para educadores, pais e/ou responsáveis de crianças com TEA.
-              de maneira prática e rápida você adpta uma rotina de acordo com suas necessidades. O site 
-              também conta com auxílio na área de comunicação através de sons e imagens, que você mesmo pode
-              escolher e adaptar.
+            <p>Um aplicativo de criação de rotinas para crianças autistas pode ter um impacto profundamente positivo na sociedade, promovendo inclusão, autonomia e bem-estar tanto para as crianças quanto para suas famílias. Ao oferecer recursos visuais, lembretes personalizados e atividades estruturadas, o app facilita a compreensão do dia a dia por parte das crianças com transtorno do espectro autista (TEA), que frequentemente se beneficiam de previsibilidade e organização. Além disso, ao reduzir crises de ansiedade e melhorar a comunicação entre pais, cuidadores e educadores, o aplicativo contribui para um ambiente mais acolhedor e colaborativo. A longo prazo, esse tipo de tecnologia pode auxiliar no desenvolvimento da independência dessas crianças, diminuir a sobrecarga familiar e fomentar uma sociedade mais empática e preparada para lidar com a diversidade.
             </p>
             </div>
           <div className="botao-landing">
