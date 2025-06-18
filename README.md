@@ -4,10 +4,13 @@
 Autism Aid Game
 
 ## Descrição
-Aplicativo voltado para pessoas com TEA (Transtorno do Espectro Autista), tendo como objetivo auxiliar crianças e adolescentes com TEA a trasmitirem suas vontades, necessidades, emoções e por ai vai.
+Interface intuitiva e simples: clara e objetiva, com botões ícones e imagens grandes e fáceis de entender.
 
-## Rquisitos
-O app Autism Aid Game é um app focado em procurar diversos jogos educacionais, atividades educacionais, sistemas de comunicação e diversos outros beneficios para crianças ou adultos com TEA.
+Comunicação alternativa: obter ferramentas de comunicação, como pranchas de comunicação com imagens e sons, para ajudar aqueles que têm dificuldades com a comunicação verbal.
+
+Personalização individual: o usuário pode personalizar o app de acordo com suas necessidades visuais, podendo ajustar cores, tamanhos, sons e etc.
+
+Rotinas e estruturas: o usuário  ou cuidador poderá criar e seguir uma rotina diária.
 
 ## Coolaboradores
 [Elionai Santos] (https://github.com/Elionai685)
