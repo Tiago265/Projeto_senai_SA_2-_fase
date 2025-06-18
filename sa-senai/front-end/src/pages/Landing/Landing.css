@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+}
+.title-landing{
+    margin-top: 6svh;
+    margin-bottom: 6vh;
+}
+.vermelho{
+    color: var(--cor-erro);
+}
+.amarelo{
+    color: yellow;
+}
+.roxo{
+    color: white;
+}
+span{
+    font-size: 50px;
+
+}
+.descricao-landing{
+    text-align: center;
+    margin-top: 19vh;
+    font-style: Thin 100;
+    
+}
+.botao-landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 18vh;
+}
+.btn-rotina{
+    /* background: hsla(277, 75%, 84%, 1);    
+    background: linear-gradient(360deg, hsla(277, 75%, 84%, 1) 0%, hsla(293, 54%, 62%, 1) 59%, hsla(297, 50%, 51%, 1) 100%);
+    background: -moz-linear-gradient(360deg, hsla(277, 75%, 84%, 1) 0%, hsla(293, 54%, 62%, 1) 59%, hsla(297, 50%, 51%, 1) 100%);
+    background: -webkit-linear-gradient(360deg, hsla(277, 75%, 84%, 1) 0%, hsla(293, 54%, 62%, 1) 59%, hsla(297, 50%, 51%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#deb8f5", 
+    endColorstr="#C66AD2", GradientType=1 ); */
+    background-color: var(--cor-primaria-escura);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    /* outline: none; */
+}
+.btn-rotina:hover{
+    background-color: var(--cor-primaria-escura);
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    /* outline: none; */
+}
+
+    
+
+    .roboto-descricao-landing{
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings:
+          "weight" 100;
+      }
+      
